@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.js": "/static/js/main.ebd18a77.js",
-    "index.html": "/index.html",
-    "main.ebd18a77.js.map": "/static/js/main.ebd18a77.js.map"
+    "main.js": "/wordle-solver/static/js/main.ebd18a77.js",
+    "index.html": "/wordle-solver/index.html",
+    "main.ebd18a77.js.map": "/wordle-solver/static/js/main.ebd18a77.js.map"
   },
   "entrypoints": [
     "static/js/main.ebd18a77.js"
