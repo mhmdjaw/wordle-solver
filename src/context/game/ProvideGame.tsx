@@ -1,4 +1,4 @@
-import { Snackbar } from '@mui/material'
+import { Snackbar, SnackbarContent } from '@mui/material'
 import React, { createContext, useContext } from 'react'
 import useProvideGame, { GameContext } from './ProvideGame.State'
 
@@ -19,15 +19,16 @@ export const ProvideGame: React.FC<ProvideGameProps> = ({ children }: ProvideGam
           anchorOrigin={{ horizontal: 'center', vertical: 'bottom' }}
           sx={{ bottom: '50% !important' }}
           open={snackbar.open}
-          autoHideDuration={1500}
-          message={<b>{snackbar.text}</b>}
+          autoHideDuration={2000}
           onClose={closeSnackbar}
           ClickAwayListenerProps={{
             onClickAway: () => {
               // nothing
             }
           }}
-        />
+        >
+          <SnackbarContent sx={{ minWidth: 'auto !important' }} message={<b>{snackbar.text}</b>} />
+        </Snackbar>
       </>
     </gameContext.Provider>
   )

@@ -98,7 +98,7 @@ const useProvideGame = () => {
         if (cellState === 'rightSpot') {
           if (newState.hint.spots[i] && newState.hint.spots[i] !== letter) {
             // conflict
-            showSnackbar('You have conflicted hints 🤔️')
+            showSnackbar('You have conflicting hints 🤔️')
             conflict = true
           } else {
             newState.hint.spots[i] = letter
@@ -112,13 +112,13 @@ const useProvideGame = () => {
           }
           if (newState.hint.inWord.some(({ value: inWordValue }) => inWordValue === value)) {
             // conflict
-            showSnackbar('You have conflicted hints 🤔️')
+            showSnackbar('You have conflicting hints 🤔️')
             conflict = true
           }
         } else {
           if (newState.hint.notInWord.includes(value)) {
             // conflict
-            showSnackbar('You have conflicted hints 🤔️')
+            showSnackbar('You have conflicting hints 🤔️')
             conflict = true
           }
           const index = newState.hint.inWord.findIndex(({ value: inWordValue }) => inWordValue === value)
@@ -134,7 +134,7 @@ const useProvideGame = () => {
             })
             if (count < 6 && inWordCount < 6 && count > inWordCount) {
               // conflict
-              showSnackbar('You have conflicted hints 🤔️')
+              showSnackbar('You have conflicting hints 🤔️')
               conflict = true
             }
           }
