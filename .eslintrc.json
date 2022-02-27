@@ -1,0 +1,51 @@
+{
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "env": {
+    "jest": true,
+    "browser": true,
+    "es2021": true
+  },
+  "extends": ["eslint:recommended", "plugin:react/recommended", "plugin:@typescript-eslint/recommended", "prettier"],
+  "plugins": ["react", "@typescript-eslint", "prettier"],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "rules": {
+    "@typescript-eslint/no-floating-promises": 0,
+    "@typescript-eslint/no-misused-promises": 0,
+    "@typescript-eslint/no-unused-vars": 1,
+    "@typescript-eslint/no-explicit-any": 1,
+    "@typescript-eslint/prefer-optional-chain": 0,
+    "@typescript-eslint/restrict-plus-operands": 0,
+    "@typescript-eslint/no-throw-literal": "off",
+    "@typescript-eslint/no-namespace": "off",
+    "@typescript-eslint/restrict-template-expressions": 0,
+    "@typescript-eslint/indent": "off",
+    "@typescript-eslint/space-before-function-paren": ["error", { "anonymous": "always", "named": "never" }],
+    "@typescript-eslint/strict-boolean-expressions": 0,
+    "eol-last": 2,
+    "import/prefer-default-export": 0,
+    "no-new": "off",
+    "no-multiple-empty-lines": ["error", { "max": 1, "maxEOF": 0 }],
+    "no-path-concat": 0,
+    "no-unused-vars": 1,
+    "operator-linebreak": "off",
+    "space-before-function-paren": 0,
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "prettier/prettier": [
+      2,
+      {
+        "semi": false,
+        "trailingComma": "none",
+        "singleQuote": true,
+        "printWidth": 120,
+        "endOfLine": "auto"
+      }
+    ]
+  }
+}
