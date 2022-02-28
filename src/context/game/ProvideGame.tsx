@@ -27,7 +27,7 @@ export const ProvideGame: React.FC<ProvideGameProps> = ({ children }: ProvideGam
             }
           }}
         >
-          <SnackbarContent sx={{ minWidth: 'auto !important' }} message={<b>{snackbar.text}</b>} />
+          <SnackbarContent sx={{ minWidth: 'auto !important', flexGrow: 'initial' }} message={<b>{snackbar.text}</b>} />
         </Snackbar>
       </>
     </gameContext.Provider>
