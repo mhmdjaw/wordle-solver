@@ -1,3 +1,3 @@
 # Wordle Solver
 
-Solve Wordle efficiently 🚶️
+The most optimal Wordle Solver
