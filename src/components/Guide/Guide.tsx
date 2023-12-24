@@ -60,7 +60,11 @@ const Guide: React.FC<GuideProps> = ({ dialog: { open, setOpen } }: GuideProps) 
           </S.Tile>
         </S.HintContainer>
         <Typography mb="14px">Hit the enter button to submit and generate the next word.</Typography>
-        <Typography>Repeat until you find the word or run out of tries.</Typography>
+        <Typography mb="14px">Repeat until you find the word or run out of tries.</Typography>
+        <Typography>
+          <b>Note:</b> it is highly recommended to start with the word <b>&quot;SLATE&quot;</b> as it&apos;s the most
+          effective word opening and even recommended by the official Wordle.
+        </Typography>
         <S.StyledDivider />
         <Typography mb="16px">
           Made with ❤️ |{' '}

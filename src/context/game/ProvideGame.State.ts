@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { findNextWord, generateWord, Hint } from 'src/helpers'
+import { findNextWord, Hint } from 'src/helpers'
 import _ from 'lodash'
 
 interface Cell {
@@ -189,7 +189,7 @@ const useProvideGame = () => {
   }
 
   const newBoard = () => {
-    const generatedWord = generateWord()
+    const generatedWord = ['s', 'l', 'a', 't', 'e']
     const firstRow: Cell[] = generatedWord.map((letter) => ({ letter, state: 'filled' }))
     const otherRows = new Array<Cell>(5).fill({ letter: '', state: 'empty' })
     const board = new Array<Cell[]>(6)
